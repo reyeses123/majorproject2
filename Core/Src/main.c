@@ -124,7 +124,7 @@ int main(void)
     /* USER CODE END WHILE */
 	  if (HAL_GPIO_ReadPin(userButton_GPIO_Port,userButton_Pin)) {
 		  HAL_GPIO_WritePin(greenLED_GPIO_Port, greenLED_Pin, GPIO_PIN_SET);
-		  printf("Hello World!");
+
 	  }
 	  else {
 		  HAL_GPIO_WritePin(greenLED_GPIO_Port, greenLED_Pin, GPIO_PIN_RESET);
